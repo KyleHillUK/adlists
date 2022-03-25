@@ -4,9 +4,11 @@
 #pihole --white-regex (\.|^)reddit\.com$
 # ^((www|(w[0-9]\.)?web|media((-[a-z]{3}|\.[a-z]{4})[0-9]{1,2}-[0-9](\.|-)(cdn|fna))?)\.)?whatsapp\.(com|net)$
 # ^whatsapp-cdn-shv-[0-9]{2}-[a-z]{3}[0-9]\.fbcdn\.net$
+# (\.|^)twimg\.com$
 #
 #
-#
+1.1.1.1
+1.0.0.1
 ## Import https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
 0.client-channel.google.com
 1drv.com
@@ -247,35 +249,36 @@ amzn.com
 ## Adobe Licence Endpoints
 lm.licenses.adobe.com
 activate.adobe.com
-
-
+#
+## TO BE FORMATTED
+#
 youtubei.googleapis.com # iOS YouTube
 oauthaccountmanager.googleapis.com # iOS YouTube
 gstaticadssl.l.google.com # Google Fonts
 googleapis.l.google.com # iOS Gmail
 dl.google.com # Chrome-Downloads
-
+#
 i.s-microsoft.com # MS Webpage
 sls.update.microsoft.com.akadns.net # Windows Update
 fe3.delivery.dsp.mp.microsoft.com # Windows Update
 v10.events.data.microsoft.com # Xbox-Achievements
 v20.events.data.microsoft.com # Xbox-Achievements
 ipv6.msftncsi.com # MS Captive Portal
-
+#
 itunes.apple.com # Apple Music
 s.mzstatic.com # Apple Music
-
+#
 gsp-ssl.ls.apple.com # iOS Weather 
 gsp-ssl.ls-apple.com.akadns.net # iOS Weather 
-
+#
 captive.apple.com # Apple - Captive Portal
 gsp1.apple.com # Apple - Captive Portal
 www.apple.com # Apple - Captive Portal
 www.appleiphonecell.com # Apple - Captive Portal
-
+#
 apresolve.spotify.com # iOS Spotify
 api-tv.spotify.com # Spotify - TV
-
+#
 upload.facebook.com # FaceBook
 creative.ak.fbcdn.net # FaceBook
 external-lhr0-1.xx.fbcdn.net # FaceBook
@@ -319,9 +322,9 @@ scontent-mia3-1.xx.fbcdn.net # FaceBook
 web.facebook.com # FaceBook
 rupload.facebook.com # FaceBook
 l.messenger.com # FaceBook
-
-
-
+#
+#
+#
 plex.tv # Plex
 tvdb2.plex.tv # Plex
 pubsub.plex.bz # Plex
@@ -347,36 +350,43 @@ app.plex.tv # Plex
 o1.email.plex.tv # Plex
 o2.sg0.plex.tv # Plex
 dashboard.plex.tv # Plex
-
+#
 services.sonarr.tv # Sonarr
 skyhook.sonarr.tv # Sonarr
 download.sonarr.tv # Sonarr
 apt.sonarr.tv # Sonarr
 forums.sonarr.tv # Sonarr
-
+#
 placehold.it # Placeholder Images
 placeholdit.imgix.net # Placeholder Images
-
+#
 dl.dropboxusercontent.com # Dropbox
 ns1.dropbox.com # Dropbox
 ns2.dropbox.com # Dropbox
-
+#
 gfwsl.geforce.com # Nvidia GeForce Experience
-
+#
 delivery.vidible.tv # Playback - The Times
 img.vidible.tv # Playback - The Times
 videos.vidible.tv # Playback - The Times
 edge.api.brightcove.com # Playback - The Times
 cdn.vidible.tv # Playback - The Times
-
+#
 v.w-x.co # Playback - Weather.com
-
+#
 cloudsync-prod.s3.amazonaws.com # Origin - Sync
-
+#
 tracking-protection.cdn.mozilla.net #Firefox - Tracking Protection
-
-styles.redditmedia.com
-www.redditstatic.com
-reddit.map.fastly.net
-www.redditmedia.com
-reddit-uploaded-media.s3-accelerate.amazonaws.com
+#
+styles.redditmedia.com # Reddit
+www.redditstatic.com # Reddit
+reddit.map.fastly.net # Reddit
+www.redditmedia.com # Reddit
+reddit-uploaded-media.s3-accelerate.amazonaws.com # Reddit
+#
+wa.me # WhatsApp
+www.wa.me # WhatsApp
+#
+twitter.com # Twitter
+upload.twitter.com # Twitter
+api.twitter.com # Twitter
