@@ -1,4 +1,13 @@
-## General Domains
+# Dump
+# pihole --white-regex [a-z]\.thumbs\.redditmedia\.com
+#pihole --white-regex (\.|^)redd\.it$
+#pihole --white-regex (\.|^)reddit\.com$
+# ^((www|(w[0-9]\.)?web|media((-[a-z]{3}|\.[a-z]{4})[0-9]{1,2}-[0-9](\.|-)(cdn|fna))?)\.)?whatsapp\.(com|net)$
+# ^whatsapp-cdn-shv-[0-9]{2}-[a-z]{3}[0-9]\.fbcdn\.net$
+#
+#
+#
+## Import https://raw.githubusercontent.com/anudeepND/whitelist/master/domains/whitelist.txt
 0.client-channel.google.com
 1drv.com
 2.android.pool.ntp.org
@@ -35,13 +44,10 @@ clients3.google.com
 clients4.google.com
 clients5.google.com
 clients6.google.com
-cpms.spop10.ams.plex.bz
-cpms35.spop10.ams.plex.bz
 cse.google.com
 ctldl.windowsupdate.com
 d2c8v52ll5s99u.cloudfront.net
 d2gatte9o95jao.cloudfront.net
-dashboard.plex.tv
 dataplicity.com
 def-vef.xboxlive.com
 delivery.vidible.tv
@@ -191,41 +197,6 @@ connectivitycheck.gstatic.com
 connectivitycheck.android.com
 www.msftconnecttest.com
 #
-## Facebook
-creative.ak.fbcdn.net
-external-lhr0-1.xx.fbcdn.net
-external-lhr10-1.xx.fbcdn.net
-external-lhr1-1.xx.fbcdn.net
-external-lhr2-1.xx.fbcdn.net
-external-lhr3-1.xx.fbcdn.net
-external-lhr4-1.xx.fbcdn.net
-external-lhr5-1.xx.fbcdn.net
-external-lhr6-1.xx.fbcdn.net
-external-lhr7-1.xx.fbcdn.net
-external-lhr8-1.xx.fbcdn.net
-external-lhr9-1.xx.fbcdn.net
-fbcdn-creative-a.akamaihd.net
-graph.facebook.com
-graph.instagram.com
-instagram.c10r.facebook.com
-scontent-lhr3-1.xx.fbcdn.net
-scontent.xx.fbcdn.net
-scontent.fgdl5-1.fna.fbcdn.net
-facebook.com
-facebook.net
-fbcdn.net
-cdn.fbsbx.com
-edge-mqtt.facebook.com
-0-edge-chat.facebook.com
-1-edge-chat.facebook.com
-2-edge-chat.facebook.com
-3-edge-chat.facebook.com
-4-edge-chat.facebook.com
-5-edge-chat.facebook.com
-6-edge-chat.facebook.com
-edge-chat.facebook.com
-mqtt-mini.facebook.com
-#
 ## GTA Online telemetry. Whitelist this domain to prevent the game from crashing.
 prod.telemetry.ros.rockstargames.com
 #
@@ -276,3 +247,136 @@ amzn.com
 ## Adobe Licence Endpoints
 lm.licenses.adobe.com
 activate.adobe.com
+
+
+youtubei.googleapis.com # iOS YouTube
+oauthaccountmanager.googleapis.com # iOS YouTube
+gstaticadssl.l.google.com # Google Fonts
+googleapis.l.google.com # iOS Gmail
+dl.google.com # Chrome-Downloads
+
+i.s-microsoft.com # MS Webpage
+sls.update.microsoft.com.akadns.net # Windows Update
+fe3.delivery.dsp.mp.microsoft.com # Windows Update
+v10.events.data.microsoft.com # Xbox-Achievements
+v20.events.data.microsoft.com # Xbox-Achievements
+ipv6.msftncsi.com # MS Captive Portal
+
+itunes.apple.com # Apple Music
+s.mzstatic.com # Apple Music
+
+gsp-ssl.ls.apple.com # iOS Weather 
+gsp-ssl.ls-apple.com.akadns.net # iOS Weather 
+
+captive.apple.com # Apple - Captive Portal
+gsp1.apple.com # Apple - Captive Portal
+www.apple.com # Apple - Captive Portal
+www.appleiphonecell.com # Apple - Captive Portal
+
+apresolve.spotify.com # iOS Spotify
+api-tv.spotify.com # Spotify - TV
+
+upload.facebook.com # FaceBook
+creative.ak.fbcdn.net # FaceBook
+external-lhr0-1.xx.fbcdn.net # FaceBook
+external-lhr1-1.xx.fbcdn.net # FaceBook
+external-lhr10-1.xx.fbcdn.net # FaceBook
+external-lhr2-1.xx.fbcdn.net # FaceBook
+external-lhr3-1.xx.fbcdn.net # FaceBook
+external-lhr4-1.xx.fbcdn.net # FaceBook
+external-lhr5-1.xx.fbcdn.net # FaceBook
+external-lhr6-1.xx.fbcdn.net # FaceBook
+external-lhr7-1.xx.fbcdn.net # FaceBook
+external-lhr8-1.xx.fbcdn.net # FaceBook
+external-lhr9-1.xx.fbcdn.net # FaceBook
+fbcdn-creative-a.akamaihd.net # FaceBook
+scontent-lhr3-1.xx.fbcdn.net # FaceBook
+scontent.xx.fbcdn.net # FaceBook
+scontent.fgdl5-1.fna.fbcdn.net # FaceBook
+graph.facebook.com # FaceBook
+b-graph.facebook.com # FaceBook
+connect.facebook.com # FaceBook
+cdn.fbsbx.com # FaceBook
+api.facebook.com # FaceBook
+edge-mqtt.facebook.com # FaceBook
+mqtt.c10r.facebook.com # FaceBook
+portal.fb.com # FaceBook
+star.c10r.facebook.com # FaceBook
+star-mini.c10r.facebook.com # FaceBook
+b-api.facebook.com # FaceBook
+fb.me # FaceBook
+bigzipfiles.facebook.com # FaceBook
+l.facebook.com # FaceBook
+www.facebook.com # FaceBook
+scontent-atl3-1.xx.fbcdn.ne # FaceBookt
+static.xx.fbcdn.net # FaceBook
+edge-chat.messenger.com # FaceBook
+video.xx.fbcdn.net # FaceBook
+external-ort2-1.xx.fbcdn.net # FaceBook
+scontent-ort2-1.xx.fbcdn.net # FaceBook
+edge-chat.facebook.com # FaceBook
+scontent-mia3-1.xx.fbcdn.net # FaceBook
+web.facebook.com # FaceBook
+rupload.facebook.com # FaceBook
+l.messenger.com # FaceBook
+
+
+
+plex.tv # Plex
+tvdb2.plex.tv # Plex
+pubsub.plex.bz # Plex
+proxy.plex.bz # Plex
+proxy02.pop.ord.plex.bz # Plex
+cpms.spop10.ams.plex.bz # Plex
+meta-db-worker02.pop.ric.plex.bz # Plex
+meta.plex.bz # Plex
+tvthemes.plexapp.com.cdn.cloudflare.net # Plex
+tvthemes.plexapp.com # Plex
+106c06cd218b007d-b1e8a1331f68446599e96a4b46a050f5.ams.plex.services # Plex
+meta.plex.tv # Plex
+cpms35.spop10.ams.plex.bz # Plex
+proxy.plex.tv # Plex
+metrics.plex.tv # Plex
+pubsub.plex.tv # Plex
+status.plex.tv # Plex
+www.plex.tv # Plex
+node.plexapp.com # Plex
+nine.plugins.plexapp.com # Plex
+staging.plex.tv # Plex
+app.plex.tv # Plex
+o1.email.plex.tv # Plex
+o2.sg0.plex.tv # Plex
+dashboard.plex.tv # Plex
+
+services.sonarr.tv # Sonarr
+skyhook.sonarr.tv # Sonarr
+download.sonarr.tv # Sonarr
+apt.sonarr.tv # Sonarr
+forums.sonarr.tv # Sonarr
+
+placehold.it # Placeholder Images
+placeholdit.imgix.net # Placeholder Images
+
+dl.dropboxusercontent.com # Dropbox
+ns1.dropbox.com # Dropbox
+ns2.dropbox.com # Dropbox
+
+gfwsl.geforce.com # Nvidia GeForce Experience
+
+delivery.vidible.tv # Playback - The Times
+img.vidible.tv # Playback - The Times
+videos.vidible.tv # Playback - The Times
+edge.api.brightcove.com # Playback - The Times
+cdn.vidible.tv # Playback - The Times
+
+v.w-x.co # Playback - Weather.com
+
+cloudsync-prod.s3.amazonaws.com # Origin - Sync
+
+tracking-protection.cdn.mozilla.net #Firefox - Tracking Protection
+
+styles.redditmedia.com
+www.redditstatic.com
+reddit.map.fastly.net
+www.redditmedia.com
+reddit-uploaded-media.s3-accelerate.amazonaws.com
